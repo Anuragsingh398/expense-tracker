@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    font-family: 'Segoe UI', sans-serif;
+}
+.main-card {
+    border-radius: 20px;
+}
+.summary {
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.income {
+    background: #28a745;
+}
+.expense {
+    background: #dc3545;
+}
+.list-group-item {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.list-group-item:hover {
+    transform: scale(1.02);
+}
+.btn-danger {
+    border-radius: 50%;
+}
