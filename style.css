@@ -1,32 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-    font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
 }
-.main-card {
-    border-radius: 20px;
+
+h2 {
+  font-weight: 700;
+  color: #2c3e50;
 }
-.summary {
-    padding: 15px;
-    border-radius: 10px;
-    width: 45%;
-    text-align: center;
-    color: white;
-    font-weight: bold;
+
+.card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
-.income {
-    background: #28a745;
+
+.card:hover {
+  transform: translateY(-3px);
 }
-.expense {
-    background: #dc3545;
+
+input, select {
+  border-radius: 10px !important;
+  transition: 0.2s;
 }
-.list-group-item {
-    border-radius: 10px;
-    margin-bottom: 10px;
-    transition: 0.3s;
+
+input:focus, select:focus {
+  border-color: #0d6efd !important;
+  box-shadow: 0 0 5px rgba(13,110,253,0.4);
 }
-.list-group-item:hover {
-    transform: scale(1.02);
+
+button {
+  border-radius: 10px !important;
+  transition: 0.3s;
 }
-.btn-danger {
-    border-radius: 50%;
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.table thead {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f5ff;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#total {
+  color: #28a745;
+}
+
+canvas {
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .row > div {
+    margin-bottom: 15px;
+  }
 }
